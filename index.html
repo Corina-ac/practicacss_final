@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Mi primera página web </title>
+</head>
+
+<body>
+
+    <header>
+        <h1> Mi perfil profesional</h1>
+    </header>
+    <aside>
+        <h2 style="color: brown;"> Dato Adicional</h2>
+        <p style="font-size: 12px; font-family: cursive; color: blueviolet; "> HTML semántico mejora la organización del código y facilita la lectura.</p>
+    </aside>
+
+    <nav>
+        <a href="#">
+            Home
+        </a>
+        <a href="#objetivo">
+            Objetivo
+        </a>
+        <a href="#intereses">
+            Interesés
+        </a>
+        <a href="pages/cto/contacto.html">
+            Contacto
+        </a>
+        <a href="pages/buscar.html">
+            Buscar
+        </a>
+    </nav>
+
+    <main>
+        <h2 style="text-align: center;"> Sobre mí </h2>
+        <p style="background-color: bisque;"> Mi nombre es Geovanny Brito Casanova. Estoy aprendiendo HTML.</p>
+    </main>
+
+
+
+    <section id="objetivo">
+        <h2> Mis objetivos </h2>
+        <p> Quiero aprender a crear páginas web bien estructuradas, sin IA.</p>
+        <b style="color: #038a0c;">Hola</b>
+        <i>Hola</i>
+        <u>Hola</u>
+        <br/>
+        <strong>
+            Hola
+        </strong>
+        <em>
+            Hola
+        </em>
+
+    </section>
+
+    <section id="intereses">
+        <h2> Mis intereses </h2>
+        <ul>
+            <li> Diseño Web</li>
+            <li> Programación</li>
+            <li> Tecnología </li>
+        </ul>
+    </section>
+
+    <div class="seccion3">
+        <h2> Pasos para estudiar HTML</h2>
+        <ol>
+            <li> Abrir el editor de código</li>
+            <li> Crear el archivo .html</li>
+            <li> Escribir etiquetas HTML</li>
+            <li> Guardar y abrir en el navegador</li>
+        </ol>
+    </div>
+
+    <section class="seccion5">
+        <h2> Trabajo en: </h2>
+        <figure>
+            <img src="img/espe/imagenEjemploEspe.png" alt="Logo de la ESPE">
+            <figcaption> Universidad de las Fuerzas Armadas </figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2> Video de presentación </h2>
+        <video src="video/videoEjemploDiagnostica.mp4" 
+        controls width="400" poster="img/espe/imagenEjemploEspe.png" 
+        muted
+            loop>
+            Tu navegador no soporta video
+        </video>
+        
+
+    </section>
+
+    <section>
+        <iframe width="400" height="400"
+        src="https://es.wikipedia.org/wiki/Wikipedia:Portada"
+        title="Música"
+        frameboard="0"
+        allowfullscreen>
+
+        </iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bdz90srbneU?si=QoyqD5uKp2PkH5kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section>
+
+        <h2> Audio de presentación </h2>
+
+        <audio src="audio/audioEjemploA7X.mp3" controls loop preload="metadata">
+            Tu navegador no soporta audio
+        </audio>
+
+    </section>
+
+    <section>
+        <h2> Publicaciones </h2>
+        <article>
+            <h3> ¿Por qué aprender HTML? </h3>
+            <p> HTML permite crear la estructura de una página web de forma ordenada </p>
+        </article>
+        <article>
+            <h3> Importancia de la semántica </h3>
+            <p> Las etiquetas semánticas ayudan a comprender mejor el contenido de una página.</p>
+        </article>
+
+    </section>
+
+    <div>
+        <h2> Horario de Estudio </h2>
+        <table border="1">
+            <tr>
+                <th> Día </th>
+                <th> Actividad </th>
+            </tr>
+
+            <tr>
+                <td> Lunes</td>
+                <td> Práctica de HTML </td>
+            </tr>
+
+            <tr>
+                <td> Martes</td>
+                <td> Repasamos HTML </td>
+            </tr>
+
+            <tr>
+                <td> Miércoles</td>
+                <td> Evaluamos HTML </td>
+            </tr>
+
+            <tr>
+                <td> Jueves</td>
+                <td> Revisamos etiquetas de HTML </td>
+            </tr>
+
+            <tr>
+                <td> Viernes</td>
+                <td> Enviamos el deber de HTML </td>
+            </tr>
+
+        </table>
+    </div>
+<br/>
+
+
+    <section class="formulario">
+        <h2> Formulario </h2>
+        <form method="GET" action="pages/buscar.html">
+            <label for="tema"></label> Tema </label>
+            <input type="text" placeholder="escribe tu tema" 
+            required maxlength="9" minlength="3" 
+            id="tema" name="tema"> 
+            <label for="correo"></label> Correo </label>
+
+            <input type="email" required placeholder="escribe tu correo" id="correo" name="correo"> 
+            <button type="submit">
+                Buscar
+            </button>
+        </form>
+    </section>
+
+
+      <h2>Registro de horario</h2>
+
+  <form action="#" method="post">
+    
+    <label for="asignatura">Asignatura:</label>
+    <select id="asignatura" name="asignatura" required>
+      <option value="">-- Seleccione una asignatura --</option>
+      <option value="programacion">Programación</option>
+      <option value="base_datos">Base de Datos</option>
+      <option value="redes">Redes</option>
+      <option value="sistemas_operativos">Sistemas Operativos</option>
+    </select>
+
+    <br><br>
+
+    <label for="hora">Hora:</label>
+    <input 
+      type="time" 
+      id="hora" 
+      name="hora" 
+      min="08:00" 
+      max="17:00" 
+      step="1800" 
+      required
+    >
+
+    <br><br>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+
+    <footer>
+        <p>Creado por Geovanny Brito Casanova.</p>
+        <p> Clase de Fundamentos Web - HTML Semántico </p>
+    </footer>
+</body>
+
+</html>
