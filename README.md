@@ -1,4 +1,3 @@
-<img width="401" height="492" alt="image" src="https://github.com/user-attachments/assets/83cd8e42-3b78-4051-8e9f-8150c77b4bfe" /># PracticaCSS Final — Mi Perfil Profesional
 
 ## Descripción del proyecto
 
@@ -44,12 +43,15 @@ PracticaCSS/
 
 > Las capturas se pueden agregar aquí una vez que el sitio esté desplegado.
 > - Página principal (`index.html`) — perfil, intereses y multimedia
-![alt text](img/image.png)
+<img width="1137" height="615" alt="image" src="https://github.com/user-attachments/assets/017d80ba-6768-4513-86d3-1f62ed2e2f93" />
+
 > - Portafolio (`portafolio.html`) — tarjetas de proyecto y grid de conceptos CSS
-![alt text](img/image-1.png) 
-![alt text](img/image-2.png)
+<img width="401" height="492" alt="image" src="https://github.com/user-attachments/assets/a6b149f4-b2fc-4cba-9ec0-7ae0ae9e2d11" />
+<img width="544" height="532" alt="image" src="https://github.com/user-attachments/assets/7400a09c-4ed6-4e22-9666-83ab04928978" />
+
 > - Búsqueda (`buscar.html`)
-![alt text](img/image-3.png)
+<img width="840" height="247" alt="image" src="https://github.com/user-attachments/assets/c4f4b2dc-77a3-4cf4-be1a-624e706b4efa" />
+
 ---
 
 ## Tecnologías utilizadas
