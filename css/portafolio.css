@@ -1,0 +1,477 @@
+/* ============================================================
+   portafolio.css
+   Estilos propios de pages/portafolio.html.
+   Complementa a general.css sin reemplazarlo.
+   Paleta: verde #1b7505 | dorado #dba112 | oscuro #0d1910
+
+   Debe cargarse después de general.css.
+   ============================================================ */
+/* ============================================================
+   BLOQUE 1: NOTA INFORMATIVA
+   Para usar este estilo, agregar class="nota" en un párrafo o div.
+   ============================================================ */
+
+.nota {
+    background-color: #fff8e6;
+    border-left: 5px solid #dba112;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 0 6px 6px 0;
+}
+
+
+/* ============================================================
+   BLOQUE 2: ENCABEZADO
+   Se cambia el color del header únicamente en portafolio.html.
+   ============================================================ */
+
+header {
+    background-color: #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 3: ENLACE ACTIVO EN NAVEGACIÓN
+   Agregar class="activo" al enlace del menú de esta página.
+   ============================================================ */
+
+nav a.activo {
+    background-color: #1b7505;
+    color: white;
+}
+
+
+/* ============================================================
+   BLOQUE 4: SECCIÓN DE PRESENTACIÓN
+   Aplica a la sección con id="presentacion".
+   La figure interna muestra el logo centrado sobre fondo blanco.
+   ============================================================ */
+
+#presentacion {
+    background-color: #f0f7ee;
+    border-left: 5px solid #1b7505;
+}
+
+#presentacion figure {
+    text-align: center;
+    margin-top: 1.2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    display: inline-block;
+}
+
+
+/* ============================================================
+   BLOQUE 5: SECCIÓN DE PROYECTOS
+   Aplica a la sección con id="proyectos".
+   El h2 directo recibe una línea dorada inferior como separador.
+   ============================================================ */
+
+#proyectos {
+    background-color: #ffffff;
+}
+
+#proyectos > h2 {
+    border-bottom: 3px solid #dba112;
+    padding-bottom: 0.5rem;
+    color: #0d1910;
+}
+
+
+/* ============================================================
+   BLOQUE 6: TARJETAS DE PROYECTO
+   Para usar, colocar class="tarjeta-proyecto" en un article.
+   La figure interna flota a la derecha; el ::after limpia ese float.
+   ============================================================ */
+
+.tarjeta-proyecto {
+    background-color: #ffffff;
+    border: 2px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    border-color: #1b7505;
+    box-shadow: 0 5px 18px rgba(27, 117, 5, 0.18);
+}
+
+.tarjeta-proyecto h3 {
+    color: #1b7505;
+    margin-bottom: 0.8rem;
+    font-size: 1.15rem;
+}
+
+.tarjeta-proyecto h3 i {
+    color: #dba112;
+    margin-right: 0.4rem;
+}
+
+.tarjeta-proyecto figure {
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+    background-color: #f4f6f8;
+    border-radius: 6px;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.tarjeta-proyecto figure figcaption {
+    font-size: 0.78rem;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+.tarjeta-proyecto ul {
+    background-color: #f4f6f8;
+    border-radius: 6px;
+    padding: 0.8rem 1rem 0.8rem 2.2rem;
+    margin: 0.9rem 0;
+}
+
+.tarjeta-proyecto ul li {
+    background: none;
+    border: none;
+    padding: 0.2rem 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.tarjeta-proyecto::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ============================================================
+   BLOQUE 7: ETIQUETAS / BADGES
+   Para usar, agregar class="etiqueta" en un span dentro del article.
+   ============================================================ */
+
+.etiqueta {
+    display: inline-block;
+    background-color: #dba112;
+    color: #0d1910;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.75rem;
+    border-radius: 20px;
+    margin: 0.3rem 0.2rem 0 0;
+    letter-spacing: 0.03em;
+}
+
+
+/* ============================================================
+   BLOQUE 8: SECCIÓN DE CONCEPTOS CSS
+   Aplica a la sección con id="conceptos-css".
+   El grid organiza las tarjetas en columnas responsivas automáticas.
+   ============================================================ */
+
+#conceptos-css {
+    background-color: #ffffff;
+}
+
+#conceptos-css > h2 {
+    border-bottom: 3px solid #1b7505;
+    padding-bottom: 0.5rem;
+    color: #0d1910;
+}
+
+.grid-css-conceptos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+
+/* ============================================================
+   BLOQUE 9: TARJETAS DE CONCEPTO CSS
+   Para usar, agregar class="tarjeta-concepto" en un article.
+   El pre interno muestra código con fondo oscuro y texto verde.
+   ============================================================ */
+
+.tarjeta-concepto {
+    background-color: #f8fbf8;
+    border: 1px solid #c8e6c9;
+    border-top: 4px solid #1b7505;
+    border-radius: 8px;
+    padding: 1.2rem 1.3rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease, border-top-color 0.3s ease;
+}
+
+.tarjeta-concepto:hover {
+    box-shadow: 0 4px 14px rgba(27, 117, 5, 0.15);
+    border-top-color: #dba112;
+}
+
+.tarjeta-concepto h3 {
+    color: #1b7505;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.tarjeta-concepto h3 i {
+    color: #dba112;
+    margin-right: 0.4rem;
+}
+
+.tarjeta-concepto ul {
+    background: none;
+    padding-left: 1.4rem;
+    margin: 0.6rem 0;
+    font-size: 0.88rem;
+}
+
+.tarjeta-concepto ul li {
+    margin-bottom: 0.3rem;
+}
+
+.tarjeta-concepto pre {
+    background-color: #0d1910;
+    color: #a8e6a3;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    overflow-x: auto;
+    margin-top: 0.8rem;
+    line-height: 1.5;
+}
+
+.tarjeta-concepto pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+}
+
+
+/* ============================================================
+   BLOQUE 10: SECCIÓN DE TABLA DE AVANCE
+   Aplica a la sección con id="avance" e id="tabla-avance".
+   Las filas pares tienen fondo gris y resaltan al pasar el cursor.
+   ============================================================ */
+
+#avance {
+    background-color: #ffffff;
+}
+
+#avance > h2 {
+    border-bottom: 3px solid #1b7505;
+    padding-bottom: 0.5rem;
+    color: #0d1910;
+}
+
+#tabla-avance {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.2rem 0 1.8rem;
+}
+
+#tabla-avance caption {
+    caption-side: top;
+    font-weight: bold;
+    color: #1b7505;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+#tabla-avance th {
+    background-color: #0d1910;
+    color: #ffffff;
+    padding: 0.65rem 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+#tabla-avance td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+}
+
+#tabla-avance tbody tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+#tabla-avance tbody tr:hover td {
+    background-color: #f0f7ee;
+}
+
+
+/* ============================================================
+   BLOQUE 11: BADGES DE ESTADO
+   Para usar en HTML:
+   class="estado completado"
+   class="estado en-progreso"
+   class="estado pendiente"
+   ============================================================ */
+
+.estado {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.completado {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.en-progreso {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.pendiente {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+/* ============================================================
+   BLOQUE 12: BARRAS DE PROGRESO
+   Aplica al div con id="barras-progreso".
+   Incluye etiquetas, barras progress y valores porcentuales en span.
+   ============================================================ */
+
+#barras-progreso {
+    background-color: #f4f6f8;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    margin-top: 0.5rem;
+    border-left: 4px solid #dba112;
+}
+
+#barras-progreso h3 {
+    color: #1b7505;
+    margin-bottom: 0.8rem;
+}
+
+#barras-progreso label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #0d1910;
+}
+
+#barras-progreso progress {
+    margin: 0.25rem 0.5rem 0 0;
+    vertical-align: middle;
+}
+
+#barras-progreso span {
+    font-size: 0.9rem;
+    color: #1b7505;
+    font-weight: bold;
+}
+
+
+/* ============================================================
+   BLOQUE 13: SECCIÓN DE HABILIDADES
+   Aplica a la sección con id="habilidades".
+   Para cada habilidad, usar class="habilidad" en un article.
+   ============================================================ */
+
+#habilidades {
+    background-color: #fff8e6;
+    border-top: 4px solid #dba112;
+}
+
+#habilidades > h2 {
+    color: #0d1910;
+    border-bottom: 2px solid #dba112;
+    padding-bottom: 0.5rem;
+}
+
+.habilidad {
+    background-color: #ffffff;
+    border-left: 5px solid #1b7505;
+    border-radius: 0 6px 6px 0;
+    padding: 1rem 1.3rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.habilidad:hover {
+    border-left-color: #dba112;
+}
+
+.habilidad h3 {
+    color: #1b7505;
+    margin-bottom: 0.35rem;
+    font-size: 1rem;
+}
+
+.habilidad h3 i {
+    color: #dba112;
+    margin-right: 0.4rem;
+}
+
+
+/* ============================================================
+   BLOQUE 14: FOOTER
+   Se estiliza la dirección dentro del pie de página.
+   Los enlaces del footer se muestran en color dorado.
+   ============================================================ */
+
+footer address {
+    font-style: normal;
+    margin-top: 0.5rem;
+}
+
+footer address a {
+    color: #dba112;
+    text-decoration: none;
+}
+
+footer address a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================================================
+   BLOQUE 15: DISEÑO RESPONSIVO
+   Se aplica cuando el ancho de pantalla es menor a 700 px.
+   Las tarjetas y la cuadrícula pasan a diseño de una sola columna.
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    .tarjeta-proyecto figure {
+        float: none;
+        margin: 0 auto 1rem;
+        display: block;
+    }
+
+    .grid-css-conceptos {
+        grid-template-columns: 1fr;
+    }
+
+    #tabla-avance {
+        font-size: 0.8rem;
+    }
+
+    #tabla-avance th,
+    #tabla-avance td {
+        padding: 0.4rem 0.5rem;
+    }
+
+    #presentacion figure {
+        display: block;
+        margin: 1rem auto 0;
+    }
+
+    .tarjeta-concepto pre {
+        font-size: 0.75rem;
+    }
+}

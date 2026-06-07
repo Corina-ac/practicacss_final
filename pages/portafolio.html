@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio CSS — Geovanny Brito</title>
+
+    <!-- Como este archivo está dentro de pages, se sube un nivel con ../ -->
+    <link rel="icon" href="../img/mundito.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/portafolio.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+         BLOQUE 1: ENCABEZADO
+         Presenta el título del portafolio y el subtítulo del curso.
+         ============================================================ -->
+    <header>
+        <h1>Mi Portafolio Web</h1>
+        <p>Viaje de aprendizaje en HTML y CSS — Fundamentos Web 2026</p>
+    </header>
+
+    <!-- ============================================================
+         BLOQUE 2: NAVEGACIÓN
+         Contiene enlaces internos a las secciones y a otras páginas.
+         ============================================================ -->
+    <nav>
+        <a class="class_btn_nav_1" href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a class="class_btn_nav_1 activo" href="portafolio.html">
+            <i class="fa-solid fa-briefcase"></i>
+            Portafolio
+        </a>
+
+        <a class="class_btn_nav_2" href="#proyectos">Proyectos</a>
+
+        <a class="class_btn_nav_2" href="#conceptos-css">Conceptos CSS</a>
+
+        <a class="class_btn_nav_2" href="#avance">Avance</a>
+
+        <a class="class_btn_nav_3" href="buscar.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Buscar
+        </a>
+
+        <a class="class_btn_nav_3" href="cto/contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+    </nav>
+
+    <!-- ============================================================
+         BLOQUE 3: CONTENIDO PRINCIPAL
+         Agrupa las cuatro secciones del portafolio dentro de main.
+         ============================================================ -->
+    <main>
+
+        <!-- ============================================================
+             SECCIÓN: PRESENTACIÓN
+             Muestra la biografía breve, nota informativa y logo del autor.
+             ============================================================ -->
+        <section id="presentacion">
+            <h2>Presentación del Portafolio</h2>
+
+            <p>
+                Soy <strong>Geovanny Brito Casanova</strong>, estudiante de la Universidad de las
+                Fuerzas Armadas ESPE. Este portafolio documenta mi viaje de aprendizaje en
+                desarrollo web, desde la estructura semántica de HTML hasta el diseño visual con CSS.
+            </p>
+
+            <p>
+                A través de este espacio muestro mi progreso en el aprendizaje de
+                <em>HTML semántico</em>, <em>CSS</em> y los principales conceptos del
+                diseño web moderno, aplicados en proyectos prácticos del curso de
+                Fundamentos Web.
+            </p>
+
+            <p class="nota">
+                <i class="fa-solid fa-circle-info"></i>
+                Cada sección refleja las habilidades adquiridas y los conceptos aplicados
+                durante el curso de Fundamentos Web 2026.
+            </p>
+
+            <figure>
+                <img src="../img/espe/imagenEjemploEspe.png" alt="Logo de la ESPE" width="220">
+                <figcaption>Universidad de las Fuerzas Armadas ESPE — Ecuador</figcaption>
+            </figure>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN: PROYECTOS
+             Tres artículos con class="tarjeta-proyecto" describen cada proyecto.
+             ============================================================ -->
+        <section id="proyectos">
+            <h2>Proyectos y Prácticas</h2>
+            <p>
+                Los siguientes proyectos reflejan los principales temas trabajados durante
+                el curso, presentados como tarjetas con sus detalles y tecnologías aplicadas.
+            </p>
+
+            <!-- ============================================================
+                 ARTÍCULO 1: ESTRUCTURA HTML SEMÁNTICA
+                 Describe el trabajo con etiquetas semánticas de HTML5.
+                 ============================================================ -->
+            <article class="tarjeta-proyecto" id="proyecto-html">
+                <h3><i class="fa-brands fa-html5"></i> Estructura HTML Semántica</h3>
+
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="Práctica de HTML semántico en la ESPE" width="140">
+                    <figcaption>Práctica de etiquetas semánticas</figcaption>
+                </figure>
+
+                <p>
+                    Aprendí a estructurar páginas web utilizando etiquetas semánticas que dan
+                    significado claro al contenido: <code>header</code>, <code>nav</code>,
+                    <code>main</code>, <code>section</code>, <code>article</code>,
+                    <code>figure</code> y <code>footer</code>.
+                </p>
+
+                <ul>
+                    <li>Encabezados y párrafos con jerarquía correcta</li>
+                    <li>Listas ordenadas y desordenadas</li>
+                    <li>Tablas de datos con <code>thead</code> y <code>tbody</code></li>
+                    <li>Formularios con validación HTML5</li>
+                    <li>Multimedia: video, audio e iframes</li>
+                </ul>
+
+                <span class="etiqueta">HTML5</span>
+                <span class="etiqueta">Semántica</span>
+                <span class="etiqueta">Accesibilidad</span>
+            </article>
+
+            <!-- ============================================================
+                 ARTÍCULO 2: ESTILOS CON CSS
+                 Describe el trabajo de diseño visual con hojas de estilo.
+                 ============================================================ -->
+            <article class="tarjeta-proyecto" id="proyecto-css">
+                <h3><i class="fa-brands fa-css3-alt"></i> Estilos con CSS</h3>
+
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="Diseño visual con CSS aplicado en la ESPE" width="140">
+                    <figcaption>Diseño visual con hojas de estilo</figcaption>
+                </figure>
+
+                <p>
+                    Practiqué el uso de hojas de estilo en cascada para mejorar la presentación
+                    visual de las páginas web, aplicando colores, tipografías, bordes,
+                    espaciados y efectos interactivos con <code>:hover</code>.
+                </p>
+
+                <ul>
+                    <li>Selectores de clase (<code>.clase</code>) e identificador (<code>#id</code>)</li>
+                    <li>Modelo de caja: margen, borde y relleno</li>
+                    <li>Flexbox para disposición de elementos en fila</li>
+                    <li>Grid para maquetación en cuadrícula</li>
+                    <li>Diseño responsivo con media queries</li>
+                </ul>
+
+                <span class="etiqueta">CSS3</span>
+                <span class="etiqueta">Flexbox</span>
+                <span class="etiqueta">Grid</span>
+                <span class="etiqueta">Responsive</span>
+            </article>
+
+            <!-- ============================================================
+                 ARTÍCULO 3: FORMULARIOS Y MULTIMEDIA
+                 Describe el trabajo con formularios HTML5 y contenido multimedia.
+                 ============================================================ -->
+            <article class="tarjeta-proyecto" id="proyecto-formularios">
+                <h3><i class="fa-solid fa-file-code"></i> Formularios y Multimedia</h3>
+
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="Formularios y multimedia en la ESPE" width="140">
+                    <figcaption>Interactividad y contenido multimedia</figcaption>
+                </figure>
+
+                <p>
+                    Desarrollé formularios funcionales con múltiples tipos de campos y
+                    validación nativa de HTML5. También practiqué la inserción de
+                    contenido multimedia: video local, audio y videos externos con iframes.
+                </p>
+
+                <ul>
+                    <li>Inputs de texto, email, fecha y hora</li>
+                    <li>Métodos <code>GET</code> y <code>POST</code></li>
+                    <li>Checkboxes, radios y selects</li>
+                    <li>Etiquetas <code>video</code> y <code>audio</code> con controles</li>
+                    <li>Iframe para contenido externo (YouTube)</li>
+                </ul>
+
+                <span class="etiqueta">Formularios</span>
+                <span class="etiqueta">Multimedia</span>
+                <span class="etiqueta">Validación</span>
+            </article>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN: CONCEPTOS CSS
+             Explica los conceptos principales de CSS con ejemplos de código.
+             Esta sección usa CSS Grid para organizar las tarjetas.
+             ============================================================ -->
+        <section id="conceptos-css">
+            <h2>Conceptos Fundamentales de CSS</h2>
+            <p>
+                A continuación se explican los principales conceptos de CSS aplicados
+                en este proyecto, con ejemplos de código y descripción de su uso práctico.
+                Esta sección está organizada con <strong>CSS Grid</strong>.
+            </p>
+
+            <!-- ============================================================
+                 GRID DE TARJETAS DE CONCEPTOS
+                 Cada article usa class="tarjeta-concepto" y contiene un pre con código.
+                 ============================================================ -->
+            <div class="grid-css-conceptos">
+
+                <!-- ============================================================
+                     CONCEPTO 1: COLORES, FUENTES Y FONDOS
+                     Propiedades que controlan la apariencia visual del texto y fondo.
+                     ============================================================ -->
+                <article class="tarjeta-concepto" id="concepto-propiedades">
+                    <h3><i class="fa-solid fa-palette"></i> Colores, Fuentes y Fondos</h3>
+                    <p>
+                        Permiten personalizar la apariencia visual de los elementos
+                        mediante texto, tipografía y color de fondo.
+                    </p>
+                    <ul>
+                        <li><code>color</code>: color del texto</li>
+                        <li><code>background-color</code>: fondo del elemento</li>
+                        <li><code>font-family</code>: tipo de fuente</li>
+                        <li><code>font-size</code>: tamaño del texto</li>
+                        <li><code>font-weight</code>: grosor de la fuente</li>
+                    </ul>
+                            <pre><code>body {
+        color: #222222;
+        background-color: #f4f6f8;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+    }</code></pre>
+                </article>
+
+                <!-- ============================================================
+                     CONCEPTO 2: BORDES, MARGEN Y RELLENO
+                     Propiedades que controlan el espacio y contorno de cada elemento.
+                     ============================================================ -->
+                <article class="tarjeta-concepto" id="concepto-espaciado">
+                    <h3><i class="fa-solid fa-border-all"></i> Bordes, Margen y Relleno</h3>
+                    <p>
+                        Controlan el espacio alrededor y dentro de cada elemento,
+                        así como su contorno visual y dimensiones.
+                    </p>
+                    <ul>
+                        <li><code>border</code>: grosor, estilo y color del borde</li>
+                        <li><code>border-radius</code>: esquinas redondeadas</li>
+                        <li><code>margin</code>: espacio externo al elemento</li>
+                        <li><code>padding</code>: espacio interno del elemento</li>
+                        <li><code>width</code> / <code>height</code>: dimensiones</li>
+                    </ul>
+                    <pre><code>.tarjeta-proyecto {
+  border: 2px solid #c8e6c9;
+  border-radius: 8px;
+  margin-bottom: 1.8rem;
+  padding: 1.5rem;
+  width: 100%;
+}</code></pre>
+                </article>
+
+                <!-- ============================================================
+                     CONCEPTO 3: MODELO DE CAJA
+                     Describe las cuatro capas que componen el espacio de cada elemento.
+                     ============================================================ -->
+                <article class="tarjeta-concepto" id="concepto-box-model">
+                    <h3><i class="fa-solid fa-square-dashed"></i> Modelo de Caja</h3>
+                    <p>
+                        El modelo de caja describe cómo el navegador calcula el espacio
+                        total que ocupa cada elemento HTML, con cuatro capas:
+                    </p>
+                    <ul>
+                        <li><strong>Content:</strong> el contenido real (texto, imagen)</li>
+                        <li><strong>Padding:</strong> espacio entre contenido y borde</li>
+                        <li><strong>Border:</strong> línea que rodea el padding</li>
+                        <li><strong>Margin:</strong> espacio externo entre elementos</li>
+                    </ul>
+                    <pre><code>* {
+  box-sizing: border-box;
+  /* padding y border se incluyen
+     dentro del width total del
+     elemento, evitando desborde */
+}</code></pre>
+                </article>
+
+                <!-- ============================================================
+                     CONCEPTO 4: PROPIEDAD DISPLAY
+                     Controla cómo se renderiza un elemento en el flujo del documento.
+                     ============================================================ -->
+                <article class="tarjeta-concepto" id="concepto-display">
+                    <h3><i class="fa-solid fa-display"></i> Propiedad Display</h3>
+                    <p>
+                        Controla cómo se comporta y se renderiza un elemento
+                        en el flujo normal del documento.
+                    </p>
+                    <ul>
+                        <li><code>block</code>: ocupa toda la línea (div, p, h1)</li>
+                        <li><code>inline</code>: fluye dentro del texto (span, a)</li>
+                        <li><code>inline-block</code>: mezcla de ambos comportamientos</li>
+                        <li><code>flex</code>: activa el modelo Flexbox</li>
+                        <li><code>grid</code>: activa el modelo Grid</li>
+                        <li><code>none</code>: oculta el elemento completamente</li>
+                    </ul>
+                    <pre><code>nav {
+  display: flex; /* fila de enlaces */
+}
+.etiqueta {
+  display: inline-block; /* badges */
+}
+.grid-css-conceptos {
+  display: grid; /* cuadrícula */
+}</code></pre>
+                </article>
+
+                <!-- ============================================================
+                     CONCEPTO 5: POSICIONAMIENTO
+                     La propiedad position controla la ubicación de un elemento.
+                     ============================================================ -->
+                <article class="tarjeta-concepto" id="concepto-posicionamiento">
+                    <h3><i class="fa-solid fa-arrows-up-down-left-right"></i> Posicionamiento</h3>
+                    <p>
+                        La propiedad <code>position</code> controla cómo se ubica un
+                        elemento, usando las propiedades <code>top</code>, <code>right</code>,
+                        <code>bottom</code> y <code>left</code>.
+                    </p>
+                    <ul>
+                        <li><code>static</code>: posición por defecto, flujo normal</li>
+                        <li><code>relative</code>: desplazado desde su lugar original</li>
+                        <li><code>absolute</code>: relativo al ancestro posicionado</li>
+                        <li><code>fixed</code>: fijo respecto a la ventana del navegador</li>
+                        <li><code>sticky</code>: fijo al hacer scroll hasta un límite</li>
+                    </ul>
+                    <pre><code>.figure-flotante {
+  position: relative;
+  float: right;
+  margin-left: 1.5rem;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}</code></pre>
+                </article>
+
+                <!-- ============================================================
+                     CONCEPTO 6: FLEXBOX
+                     Modelo unidimensional para organizar elementos en fila o columna.
+                     ============================================================ -->
+                <article class="tarjeta-concepto" id="concepto-flexbox">
+                    <h3><i class="fa-solid fa-table-columns"></i> Flexbox</h3>
+                    <p>
+                        Modelo de diseño unidimensional que organiza elementos hijos
+                        en fila o columna con control preciso del alineamiento.
+                    </p>
+                    <ul>
+                        <li><code>display: flex</code>: activa el contenedor flex</li>
+                        <li><code>flex-direction</code>: dirección (row / column)</li>
+                        <li><code>justify-content</code>: alineación en eje principal</li>
+                        <li><code>align-items</code>: alineación en eje cruzado</li>
+                        <li><code>flex-wrap</code>: permite saltos de línea</li>
+                        <li><code>gap</code>: espacio uniforme entre elementos</li>
+                    </ul>
+                    <pre><code>nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}</code></pre>
+                </article>
+
+                <!-- ============================================================
+                     CONCEPTO 7: CSS GRID
+                     Modelo bidimensional para maquetaciones en filas y columnas.
+                     ============================================================ -->
+                <article class="tarjeta-concepto" id="concepto-grid">
+                    <h3><i class="fa-solid fa-table-cells"></i> CSS Grid</h3>
+                    <p>
+                        Modelo de diseño bidimensional que organiza elementos en filas
+                        y columnas simultáneamente, ideal para maquetaciones complejas.
+                    </p>
+                    <ul>
+                        <li><code>display: grid</code>: activa el contenedor grid</li>
+                        <li><code>grid-template-columns</code>: define las columnas</li>
+                        <li><code>grid-template-rows</code>: define las filas</li>
+                        <li><code>gap</code>: espacio entre celdas</li>
+                        <li><code>auto-fit</code> + <code>minmax</code>: columnas responsivas</li>
+                        <li><code>grid-column / grid-row</code>: posición de un elemento</li>
+                    </ul>
+                    <pre><code>.grid-css-conceptos {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}</code></pre>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN: TABLA DE AVANCE ACADÉMICO
+             Muestra el progreso por tema en una tabla y barras de progreso.
+             ============================================================ -->
+        <section id="avance">
+            <h2>Resumen de Aprendizaje</h2>
+            <p>
+                La siguiente tabla muestra el avance obtenido en cada tema del curso
+                de Fundamentos Web durante el periodo académico 2026:
+            </p>
+
+            <table id="tabla-avance">
+                <caption>Avance académico — Fundamentos Web 2026</caption>
+
+                <thead>
+                    <tr>
+                        <th>Tema</th>
+                        <th>Descripción</th>
+                        <th>Herramienta</th>
+                        <th>Estado</th>
+                        <th>Avance</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Estructura HTML</td>
+                        <td>Etiquetas básicas y semánticas</td>
+                        <td><code>HTML5</code></td>
+                        <td><span class="estado completado">Completado</span></td>
+                        <td>90%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Listas y Tablas</td>
+                        <td>Organización y presentación de datos</td>
+                        <td><code>HTML5</code></td>
+                        <td><span class="estado completado">Completado</span></td>
+                        <td>85%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Formularios</td>
+                        <td>Inputs, selects y validación nativa</td>
+                        <td><code>HTML5</code></td>
+                        <td><span class="estado completado">Completado</span></td>
+                        <td>80%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Multimedia</td>
+                        <td>Video, audio e iframes</td>
+                        <td><code>HTML5</code></td>
+                        <td><span class="estado completado">Completado</span></td>
+                        <td>75%</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS Básico</td>
+                        <td>Selectores, colores y tipografía</td>
+                        <td><code>CSS3</code></td>
+                        <td><span class="estado en-progreso">En progreso</span></td>
+                        <td>70%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Flexbox y Grid</td>
+                        <td>Diseño avanzado con CSS</td>
+                        <td><code>CSS3</code></td>
+                        <td><span class="estado en-progreso">En progreso</span></td>
+                        <td>50%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Diseño Responsivo</td>
+                        <td>Media queries y diseño adaptable</td>
+                        <td><code>CSS3</code></td>
+                        <td><span class="estado pendiente">Pendiente</span></td>
+                        <td>30%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- ============================================================
+                 BARRAS DE PROGRESO POR ÁREA
+                 Usa el elemento progress de HTML5 con id="barras-progreso".
+                 ============================================================ -->
+            <div id="barras-progreso">
+                <h3>Progreso por área</h3>
+
+                <label for="barra-html">HTML Semántico:</label>
+                <progress id="barra-html" value="90" max="100"></progress>
+                <span>90%</span>
+
+                <br>
+
+                <label for="barra-css">CSS Estilos:</label>
+                <progress id="barra-css" value="70" max="100"></progress>
+                <span>70%</span>
+
+                <br>
+
+                <label for="barra-forms">Formularios:</label>
+                <progress id="barra-forms" value="80" max="100"></progress>
+                <span>80%</span>
+
+                <br>
+
+                <label for="barra-flexgrid">Flexbox y Grid:</label>
+                <progress id="barra-flexgrid" value="50" max="100"></progress>
+                <span>50%</span>
+
+                <br>
+
+                <p>Nivel global del curso:</p>
+                <meter value="7.5" min="0" max="10" low="4" high="8" optimum="9"></meter>
+                <span>7.5 / 10</span>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN: HABILIDADES ADQUIRIDAS
+             Cada article con class="habilidad" describe una competencia lograda.
+             ============================================================ -->
+        <section id="habilidades">
+            <h2>Habilidades Adquiridas</h2>
+
+            <article class="habilidad">
+                <h3><i class="fa-solid fa-code"></i> Código Limpio y Semántico</h3>
+                <p>
+                    Aplicación de buenas prácticas en la escritura de HTML: indentación correcta,
+                    uso apropiado de etiquetas semánticas y comentarios descriptivos para documentar
+                    cada sección del código fuente.
+                </p>
+            </article>
+
+            <article class="habilidad">
+                <h3><i class="fa-solid fa-paintbrush"></i> Diseño Visual con CSS</h3>
+                <p>
+                    Uso de hojas de estilo para crear páginas con identidad visual propia:
+                    paleta de colores coherente, tipografía legible, espaciados adecuados
+                    y efectos interactivos que mejoran la experiencia del usuario.
+                </p>
+            </article>
+
+            <article class="habilidad">
+                <h3><i class="fa-solid fa-link"></i> Navegación y Rutas Relativas</h3>
+                <p>
+                    Creación de menús de navegación funcionales con rutas relativas correctas
+                    entre múltiples páginas de un mismo sitio web, incluyendo enlaces internos,
+                    externos y de anclaje a secciones específicas.
+                </p>
+            </article>
+
+            <article class="habilidad">
+                <h3><i class="fa-solid fa-mobile-screen"></i> Diseño Responsivo</h3>
+                <p>
+                    Aplicación de media queries para adaptar el diseño a diferentes tamaños
+                    de pantalla, asegurando una experiencia de usuario óptima tanto en
+                    dispositivos móviles como en pantallas de escritorio.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+         BLOQUE 4: PIE DE PÁGINA
+         Muestra el nombre del autor, la asignatura y enlaces de retorno.
+         ============================================================ -->
+    <footer>
+        <p>&copy; 2026 Geovanny Brito Casanova &mdash; Portafolio Web</p>
+        <p>Fundamentos Web &middot; Universidad de las Fuerzas Armadas ESPE</p>
+        <address>
+            Ecuador &mdash;
+            <a href="../index.html">Ir al Inicio</a>
+            &middot;
+            <a href="cto/contacto.html">Contacto</a>
+        </address>
+    </footer>
+
+</body>
+</html>
