@@ -1,4 +1,4 @@
-# PracticaCSS Final — Mi Perfil Profesional
+<img width="401" height="492" alt="image" src="https://github.com/user-attachments/assets/83cd8e42-3b78-4051-8e9f-8150c77b4bfe" /># PracticaCSS Final — Mi Perfil Profesional
 
 ## Descripción del proyecto
 
@@ -13,33 +13,32 @@ de los principales conceptos de CSS.
 ## Estructura de carpetas
 
 PracticaCSS/
-├── index.html              ← Página principal (perfil profesional)
-├── README.md
+├── index.html                  # Página principal (Perfil Profesional)
+├── README.md                   # Documentación del proyecto
 │
-├── pages/
-│   ├── portafolio.html     ← Portafolio CSS y conceptos de diseño
-│   ├── buscar.html         ← Página de búsqueda (recibe formulario GET)
+├── pages/                      # Vistas secundarias del sitio
+│   ├── portafolio.html         # Portafolio CSS y conceptos de diseño
+│   ├── buscar.html             # Página de búsqueda (Procesamiento de formulario GET)
 │   └── cto/
-│       └── contacto.html   ← Formulario de contacto
+│       └── contacto.html       # Formulario de contacto
 │
-├── css/
-│   ├── general.css         ← Estilos compartidos por todas las páginas
-│   ├── index.css           ← Estilos propios de index.html
-│   ├── portafolio.css      ← Estilos propios de portafolio.html
-│   ├── buscar.css          ← Estilos propios de buscar.html
-│   └── contacto.css        ← Estilos propios de contacto.html
+├── css/                        # Hojas de estilo estructuradas
+│   ├── general.css             # Estilos compartidos (Navbar, Footer, Reset)
+│   ├── index.css               # Estilos específicos de index.html
+│   ├── portafolio.css          # Estilos específicos de portafolio.html
+│   ├── buscar.css              # Estilos específicos de buscar.html
+│   └── contacto.css            # Estilos específicos de contacto.html
 │
-├── img/
-│   ├── mundito.ico         ← Ícono de la pestaña del navegador
+├── img/                        # Recursos gráficos estáticos
+│   ├── mundito.ico             # Ícono de la pestaña del navegador (Favicon)
 │   └── espe/
 │       └── imagenEjemploEspe.png
 │
-├── audio/
+├── audio/                      # Archivos de audio locales
 │   └── audioEjemploA7X.mp3
 │
-└── video/
+└── video/                      # Recursos de video locales
     └── videoEjemploDiagnostica.mp4
-```
 
 ## Capturas de pantalla
 
