@@ -11,33 +11,7 @@ de los principales conceptos de CSS.
 
 ## Estructura de carpetas
 
-PracticaCSS/
-├── index.html                  # Página principal (Perfil Profesional)
-├── README.md                   # Documentación del proyecto
-│
-├── pages/                      # Vistas secundarias del sitio
-│   ├── portafolio.html         # Portafolio CSS y conceptos de diseño
-│   ├── buscar.html             # Página de búsqueda (Procesamiento de formulario GET)
-│   └── cto/
-│       └── contacto.html       # Formulario de contacto
-│
-├── css/                        # Hojas de estilo estructuradas
-│   ├── general.css             # Estilos compartidos (Navbar, Footer, Reset)
-│   ├── index.css               # Estilos específicos de index.html
-│   ├── portafolio.css          # Estilos específicos de portafolio.html
-│   ├── buscar.css              # Estilos específicos de buscar.html
-│   └── contacto.css            # Estilos específicos de contacto.html
-│
-├── img/                        # Recursos gráficos estáticos
-│   ├── mundito.ico             # Ícono de la pestaña del navegador (Favicon)
-│   └── espe/
-│       └── imagenEjemploEspe.png
-│
-├── audio/                      # Archivos de audio locales
-│   └── audioEjemploA7X.mp3
-│
-└── video/                      # Recursos de video locales
-    └── videoEjemploDiagnostica.mp4
+<img width="251" height="512" alt="image" src="https://github.com/user-attachments/assets/616d8a69-02e0-48d7-9eed-2a89bb6d1f92" />
 
 ## Capturas de pantalla
 
